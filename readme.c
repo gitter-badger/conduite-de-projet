@@ -26,3 +26,5 @@ wskjhbcg <uiwv f<subg xc
 
 123456
 
+
+Join the chat at https://gitter.im/conduite-de-projet/Lobby
