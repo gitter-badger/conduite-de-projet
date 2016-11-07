@@ -1,0 +1,462 @@
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git init
+Dépôt Git existant réinitialisé dans /info/etu/l2spi/spi2232/Documents/workspace/tp-conduite projet/conduite-de-projet/.git/
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit "ZHAN Che"
+error: pathspec 'ZHAN Che' did not match any file(s) known to git.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git add .
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ ls
+cdp.c  command:gedit  readme.c	tp2.c  tp3.c
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit "ZHAN Che"
+error: pathspec 'ZHAN Che' did not match any file(s) known to git.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit -m
+error: switch `m' requires a value
+usage : git commit [<options>] [--] <spécification-de-chemin>...
+
+    -q, --quiet           supprimer le résumé après une validation réussie
+    -v, --verbose         afficher les diff dans le modèle de message de validation
+
+Options du message de validation
+    -F, --file <fichier>  lire le message depuis un fichier
+    --author <auteur>     remplacer l'auteur pour la validation
+    --date <date>         remplacer la date pour la validation
+    -m, --message <message>
+                          message de validation
+    -c, --reedit-message <commit>
+                          réutiliser et éditer le message du commit spécifié
+    -C, --reuse-message <commit>
+                          réutiliser le message du commit spécifié
+    --fixup <commit>      utiliser un message au format autosquash pour corriger le commit spécifié
+    --squash <commit>     utiliser un message au format autosquash pour compresser le commit spécifié
+    --reset-author        à présent je suis l'auteur de la validation (utilisé avec -C/-c/--amend)
+    -s, --signoff         ajouter une entrée Signed-off-by :
+    -t, --template <fichier>
+                          utiliser le fichier de modèle spécifié
+    -e, --edit            forcer l'édition du commit
+    --cleanup <défaut>    comment éliminer les espaces et les commentaires # du message
+    --status              inclure le statut dans le modèle de message de validation
+    -S, --gpg-sign[=<id de clé>]
+                          signer la validation avec GPG
+
+Valider les options des contenus
+    -a, --all             valider tous les fichiers modifiés
+    -i, --include         ajouter les fichiers spécifiés à l'index pour la validation
+    --interactive         ajouter des fichiers en mode interactif
+    -p, --patch           ajouter les modifications en mode interactif
+    -o, --only            valider seulement les fichiers spécifiés
+    -n, --no-verify       éviter d'utiliser le crochet pre-commit
+    --dry-run             afficher ce qui serait validé
+    --short               afficher le statut avec concision
+    --branch              afficher l'information de branche
+    --porcelain           sortie pour traitement automatique
+    --long                afficher le statut en format long (par défaut)
+    -z, --null            terminer les éléments par NUL
+    --amend               corriger la validation précédente
+    --no-post-rewrite     éviter d'utiliser le crochet post-rewrite
+    -u, --untracked-files[=<mode>]
+                          afficher les fichiers non suivis, "mode" facultatif : all (tous), normal, no. (Défaut : all)
+
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit -m "ZHAN Che"
+[master e5183d8] ZHAN Che
+ Committer: che zhan <spi2232@ic2s122-03.univ-lemans.fr>
+Votre nom et votre adresse e-mail ont été configurés automatiquement en se
+fondant sur votre nom d'utilisateur et le nom de votre machine. Veuillez 
+vérifier qu'ils sont corrects. Vous pouvez supprimer ce message en les 
+paramétrant explicitement. Lancez les commandes suivantes et suivez les
+instruction dans votre éditeur pour éditer votre fichier de configuration :
+
+    git config --global --edit
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+remote: Permission to Leavesholic/conduite-de-projet.git denied to zhanche1.
+fatal: unable to access 'https://github.com/Leavesholic/conduite-de-projet/': The requested URL returned error: 403
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+remote: Permission to Leavesholic/conduite-de-projet.git denied to zhanche1.
+fatal: unable to access 'https://github.com/Leavesholic/conduite-de-projet/': The requested URL returned error: 403
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': git push -u
+Password for 'https://git push -u@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Leavesholic/conduite-de-projet/'
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+remote: Permission to Leavesholic/conduite-de-projet.git denied to zhanche1.
+fatal: unable to access 'https://github.com/Leavesholic/conduite-de-projet/': The requested URL returned error: 403
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+To https://github.com/Leavesholic/conduite-de-projet
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/Leavesholic/conduite-de-projet'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+To https://github.com/Leavesholic/conduite-de-projet
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/Leavesholic/conduite-de-projet'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git init
+Dépôt Git existant réinitialisé dans /info/etu/l2spi/spi2232/Documents/workspace/tp-conduite projet/conduite-de-projet/.git/
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git add .
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ ls
+cdp.c  command:gedit  readme.c	tp2.c  tp3.c
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit -m "ZHAN Che"
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+To https://github.com/Leavesholic/conduite-de-projet
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/Leavesholic/conduite-de-projet'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git diff <source_branch><target_branch>
+bash: erreur de syntaxe près du symbole inattendu « < »
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git diff<source_branch><target_branch>
+bash: erreur de syntaxe près du symbole inattendu « < »
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git diffsource_branchtarget_branch
+git : 'diffsource_branchtarget_branch' n'est pas une commande git. Voir 'git --help'.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git statusSur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+rien à valider, la copie de travail est propre
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -uwarning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Leavesholic/conduite-de-projet/'
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push -u
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+To https://github.com/Leavesholic/conduite-de-projet
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/Leavesholic/conduite-de-projet'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push origin master
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+To https://github.com/Leavesholic/conduite-de-projet
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/Leavesholic/conduite-de-projet'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+
+
+
+
+
+
+
+
+
+
+
+
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Dépaquetage des objets: 100% (3/3), fait.
+Depuis https://github.com/Leavesholic/conduite-de-projet
+ * branch            master     -> FETCH_HEAD
+   9737988..fe054ad  master     -> origin/master
+Fusion automatique de readme.c
+CONFLIT (contenu) : Conflit de fusion dans readme.c
+La fusion automatique a échoué ; réglez les conflits et validez le résultat.
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ gedit readme.c
+
+(gedit:2583): GVFS-RemoteVolumeMonitor-WARNING **: remote volume monitor with dbus name org.gtk.vfs.UDisks2VolumeMonitor is not supported
+
+(gedit:2583): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche et 'origin/master' ont divergé,
+et ont 1 et 1 commit différent chacune respectivement.
+  (utilisez "git pull" pour fusionner la branche distante dans la vôtre)
+Vous avez des chemins non fusionnés.
+  (réglez les conflits puis lancez "git commit")
+
+Chemins non fusionnés :
+  (utilisez "git add <fichier>..." pour marquer comme résolu)
+
+	modifié des deux côtés :  readme.c
+
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git add .
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git status
+Sur la branche master
+Votre branche et 'origin/master' ont divergé,
+et ont 1 et 1 commit différent chacune respectivement.
+  (utilisez "git pull" pour fusionner la branche distante dans la vôtre)
+Tous les conflits sont réglés mais la fusion n'est pas terminée.
+  (utilisez "git commit" pour terminer la fusion)
+
+Modifications qui seront validées :
+
+	modifié :         readme.c
+
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git commit -m "fusion"
+[master 3c54d08] fusion
+ Committer: che zhan <spi2232@ic2s122-03.univ-lemans.fr>
+Votre nom et votre adresse e-mail ont été configurés automatiquement en se
+fondant sur votre nom d'utilisateur et le nom de votre machine. Veuillez 
+vérifier qu'ils sont corrects. Vous pouvez supprimer ce message en les 
+paramétrant explicitement. Lancez les commandes suivantes et suivez les
+instruction dans votre éditeur pour éditer votre fichier de configuration :
+
+    git config --global --edit
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ git push origin master
+Username for 'https://github.com': 470481029@qq.com
+Password for 'https://470481029@qq.com@github.com': 
+Décompte des objets: 6, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (4/4), fait.
+Écriture des objets: 100% (6/6), 579 bytes | 0 bytes/s, fait.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local objects.
+To https://github.com/Leavesholic/conduite-de-projet
+   fe054ad..3c54d08  master -> master
+spi2232@ic2s122-03:~/Documents/workspace/tp-conduite projet/conduite-de-projet$ 
